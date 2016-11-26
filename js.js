@@ -229,11 +229,22 @@ alert(get_yesterday());*/
 alert(get_count_work_days(date1, date2));*/
 
 /*26.Напишите функцию get_count_days(date) , которая будет считать количество дней до Нового года от date, если оно задано, иначе посчитать количество дней от текущей даты*/
-function get_count_days(date){
+/*function get_count_days(date){
+    if (date != null){
+        dateFixed = new Date(date);
+    }
+    else dateFixed = new Date();
+
     newYear = new Date(2017,0,1);
-    dateFixed = new Date(date);
     return daysLeft = 'До Нового Года осталось ' + Math.floor( (newYear - dateFixed) / (1000 * 60 * 60 * 24) ) + ' дней';
 }
-alert(get_count_days('2016,11,26'));
+alert(get_count_days());*/
 
-
+/*27.Напишите функцию get_date(date, count_days), которая вернет дату date + count_days в формате 27 ноября 2016г
+Например
+get_date(‘2016-11-27’, 3) должно вернуть 30 ноября 2016г*/
+/*date = '2014-11-27';
+dateArr = date.split('-');
+now = new Date(dateArr[0],dateArr[1],dateArr[2]);
+var year = now.getFullYear();
+alert(now);*/
