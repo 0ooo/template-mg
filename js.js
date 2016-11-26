@@ -250,8 +250,11 @@ alert(get_count_days());*/
 /*27.Напишите функцию get_date(date, count_days), которая вернет дату date + count_days в формате 27 ноября 2016г
 Например
 get_date(‘2016-11-27’, 3) должно вернуть 30 ноября 2016г*/
-/*date = '2014-11-27';
-dateArr = date.split('-');
-now = new Date(dateArr[0],dateArr[1],dateArr[2]);
-var year = now.getFullYear();
-alert(now);*/
+/*function get_date(date, count_days){
+			d = new Date(date)
+			d.setDate(d.getDate() + count_days);
+			var mounts = ['января','февраля','марта','апреля','майа','июня','июля','августа','сентября','октября','ноября','декабря'];
+			return ( d.getDate() + ' ' + mounts[d.getMonth()] + ' ' + d.getFullYear() + ' г.');
+		}
+		var date = '2016-11-26';
+		alert(get_date(date, 10));*/
